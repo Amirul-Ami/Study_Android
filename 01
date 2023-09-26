@@ -1,0 +1,37 @@
+1: UI element
+(TextView)
+	layout_width (wrap_content/match_parent
+	layout_height
+	text
+	layout_centerHorizontal
+	layout_centerVertical
+	layout_centerInParent
+	textSize (sp)
+	textStyle (bold|italic)
+	textColor (res>values>color)
+	id (@+id/)
+	layout_below
+	onClick = name__creat_method
+Margin:
+	layout_marginTop
+
+color:
+	background
+
+
+
+
+Preview Window:
+	# changing different screen size.
+
+
+
+
+Main_Activity:
+
+Click listener:
+	1# public void methodNamefromXML( View view ){
+	Textview text = findViewById( R.id.TextId );
+	text.setText( “new text” );
+}
+	
