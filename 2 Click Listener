@@ -1,0 +1,29 @@
+Click Listener:
+	Xml:
+	layout_width	
+	layout_height
+	text
+	layout_centerInParent
+	id
+
+#1 Click Listener in java:
+	1: ButtonID.setOnClickListener( new interface )
+		new View.OnClickListener(){ 
+@Override 
+public void onClick( View v ){ }}
+
+	 2: implement interface
+		className implement View.OnClickListener{
+		@Override
+		public void onClick( View v )
+•	ButtonID.setOnLongClickListener()	> return true;
+
+#2 Toast
+	Toast.makeText( context: this, text: “ hello ”, Toast.LENGTH_SHORT).show();
+
+# 3 UI attribute:
+•	EditText: hint, textColor, textStyle, lines, inputType, 
+•	Margin: outside of the element
+•	Padding: inside of the element
+
+#4 layout_below is only in Relative Layout.
