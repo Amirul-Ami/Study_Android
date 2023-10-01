@@ -1,0 +1,29 @@
+1: (inheritance)
+•	Button extends TextView extends View
+•	clickListener will work on every UI element.
+
+2: CheckBox:
+•	layout_toRightOf
+•	checked = “true/false”
+•	onCheckedChangeListener
+•	.isChecked() return Boolean
+
+3: RadioButton
+•	checked
+
+4: RadioGroup
+•	orientation
+•	onCheckedChangedListener 
+•	.getCheckedRadioButtonId() return Id
+
+5: ProgressBar
+•	Visibility	.setVisibility( View.VISIBLE )
+•	style	Horizontal
+•	progress ”30”
+•	max ”100”
+java
+•	progressBarID.incrementProgressBy( diff: 10 )
+•	progressBarID.getProgress()	return integer of progress.
+
+6: Thread
+•	SystemClock.sleep( ms:500 );	import> android.os.SystemClock;
