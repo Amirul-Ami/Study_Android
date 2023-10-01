@@ -1,0 +1,36 @@
+List View
+
+# (list of different cities)
+<ListView
+
+	1: ArrayList
+	2: ArrayAdapter <String>
+		context: this
+		layout: android.R.layout.simple_list_item_1
+		data: ArrayList
+	3: setAdapter( ArrayAdapter )
+	4: setOnItemClickListener()
+		  new AdapterView.OnItemClickListener()
+
+
+Spinner
+
+(if data is dynamic):
+1: ArrayList
+2: ArrayAdapter
+	this
+	android.R.layout.simple_spinner_dropdown_item,
+	ArrayList
+3: setAdapter()
+4: setOnItemSelectedListener
+
+( if data is static ):
+1:strings.xml folder:
+	<string-array name="students">
+		<item>Amirul</item>
+		<item>ami</item>
+		<item>Aditto</item>
+	</string-array>
+2:(xml)
+	android:entries="@array/students"
+3: spinnerID.getSelectedItem().toString()    [if you want to get the selected items]
