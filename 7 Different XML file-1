@@ -1,0 +1,17 @@
+# (string.xml)
+localize:
+	1:String > new > Value resource file > 
+	file name: shoud be same
+	available qualifiers: Local
+
+	2:<string name="shoud be same name">translate name</string>
+
+# (colors.xml)
+	values > colors.xml
+	1: <color name="blue">hexaInt</color>
+
+# (Style.xml)
+	values > styles.xml
+	1:
+
+# (Manifest.xml) 
