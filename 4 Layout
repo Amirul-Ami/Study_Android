@@ -1,0 +1,24 @@
+#1 Layouts (user interface)
+
+Relative Layout:
+In relative layout all of our ui element some how related to each other. Its means that the place of every ui element is relative to another layout or its parent.
+•	RelativeLayout inside another relative layout.
+•	Inside any kind of layout you have relative layout.
+
+Linear Layout:
+	UI element will place one after another. You can change orientation
+•	Orientation Vertical/Horizontal
+•	layout_weight
+
+Constraint layout:
+•	constraint 
+•	Show Baseline 
+•	Helpers > Guidline
+•	Set Sample Data (RMB)
+
+# Component Tree: for masse ui
+
+
+Image
+•	Layout_width	0dp
+•	Ratio > layout_constraintD
