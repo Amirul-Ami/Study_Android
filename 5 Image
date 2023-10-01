@@ -1,0 +1,13 @@
+Image:
+# src
+
+# drawable folder
+	add Icon
+
+# mipmap
+	past image
+	name: no uppercase/space.
+
+# app icon
+	Manifest:
+	icon & roundIcon
