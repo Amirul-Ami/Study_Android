@@ -1,0 +1,32 @@
+# Menu
+
+1: res > (new) Directory > (name) menu
+2: menu > (new) Menu resource file > (name) main_menu
+3: <item
+  	title = ""
+	  id = ""
+	  icon = 
+	  show_As_Action = ifRoom/never/always
+    />
+
+<item
+	title = "Alarm"
+	id = "@+id/alarm_menu"
+	icon = "@drawable/ic_alarm"
+	showAsAction = "ifRoom"/>
+
+
+(Main Activity)
+
+1: override
+onCreatOptionsMenu( Menu menu )
+
+2: MenuInflater inflater = getMenuinflater();
+3: inflater.inflate(R.menu.main_menu, menu);
+4: return true;
+
+(click listener)
+1:@override
+onOptionsItemSelected( MenuItem item )
+2: item.getItemId()
+3: return superonOptionsItemSelected( item );
