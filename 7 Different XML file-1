@@ -10,8 +10,10 @@ localize:
 	values > colors.xml
 	1: <color name="blue">hexaInt</color>
 
-# (Style.xml)
+# (Theme.xml) == (Style.xml)
 	values > styles.xml
 	1:
 
 # (Manifest.xml) 
+	1: label :> apps_name.
+	2: icon/roundIcon :> apps_logo
