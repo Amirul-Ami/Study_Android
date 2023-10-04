@@ -1,0 +1,79 @@
+material design website. (material.io) (Documentation )
+
+(Material Design Subject):
+Button, Floating Action, Material Card CheckBox, Snackbar, Top App bar, Bottom app bar, tabs layout.
+
+
+# How to use Material Component:
+	1: add material design library.
+		(mavle-repo)
+		(add dependencies)
+	2: Theme:
+		1: change theme (Material Component)
+	3: in XML:
+		1: Now can use material component
+(if you add another element into your layout file, for example the checkBox. by default the checkbox from the material library will be use )
+
+
+1# Button (Material)
+	2: backgroundTint
+	3: style
+@style/Widget.MaterialComponents.Button.UnelevatedButton
+
+@style/Widget.MaterialComponent.Button.OutlinedButton
+
+@style/Widget.MaterialComponent.Button.TextButton
+
+
+
+
+(Elements only came from material library)
+
+1# floating action button
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+	Position
+	* align Parent Bottom
+	* align Parent End
+	* margin End
+	* margin bottom
+
+	* src (icon)
+	* android: backgroundTint (background color)
+	* app: backgroundTint (border color)
+	* app: rippleColor (color change while click)
+
+	*setOnClickListener
+
+	usees: floating action button + bottom app bar navigation.
+
+
+2# Snackbar
+	1: (add) id (xml parent layout)
+
+	2: snackbarID.make( parentLayout, text, INDEFINITE/SHORT/LONG)
+	3: .setAction( text , new View.onClickListener)
+	4: .show();
+
+	.make has 3 input ==
+	1: (the layout we are going to show snackbar)
+	2: (text)
+	3: (LENGTH_INDEFINITE)
+
+	.setAction(Text, click)  [snackbar button]
+	.show
+
+	color:
+		.setActionTextColor()
+		.setTextColor()
+	1: getColor(R.color.colorName)
+	2: getResources().getColor(R.color.colorName)
+	3: Color.RED (android.graphics) [if you dont have the RED color in your resources you can get color from this class.]
+
+
+
+3# CardView
+<com.google.android.material.card.MaterialCardView
+
+
