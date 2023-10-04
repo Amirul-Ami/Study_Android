@@ -1,0 +1,17 @@
+# Landscape (in two way)
+	1: layout Directory >new > layout Resource File
+	2: (Orientation for preview (o)) > Creat Landscape Varition
+
+# Night Mood
+	1: Orientation for preview (o) > creat Other > Night Mode + night
+
+# version
+	1: Orientation for preview (o) > creat Other > Version + (API Number)
+
+# TreadMark
+	1: layout Directory >new > layout Resourcr File > name: TreadMark, RelativeLayout + OK
+	2: <include layout ="@layout/treadMark"   (include another xml file.)
+
+
+# center element
+1: RMB > center > center Horizontaly.
