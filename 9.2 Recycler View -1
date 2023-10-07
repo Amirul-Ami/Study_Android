@@ -1,0 +1,57 @@
+Using Recycler_View:
+
+
+1# initialize RecyclerView:
+
+	1# add dependencies
+		1: Gradle Scripts > dependencies{} >
+		implementation 'androidx.recyclerview: recyclerview: ver.si.on'
+
+	2# XML (activity)
+		1: <androidx.recyclerview.widget.RecyclerView
+	
+	3# Java
+		1: initialize Recycler_View ( findViewById() )
+
+
+2# Data_Model class (this class hold the data variable.)
+	(at first we need to creat data_Model, that need to adapter Arraylist)
+
+
+3# Custom Layout:
+	* creat one layout style for every item.
+	* Initilize layout element in ViewHolder class.
+
+	1: Resource > layout > *new > Layout Resource File
+	2: make layout
+
+
+4# Adapter:
+
+	1: (innerclass) ViewHolder extends RecyclerView.ViewHolder{}
+		* (create) Constructor
+		* (initialize Custome_layout element inside this class)
+
+	2: (class) adapter extends Recyclerview.Adapter < ViewHolder >
+
+	* (create) Constructor
+	* (create) Arraylist <Model>	(initialize)(if not initilize user will get null pointer exception.)
+	* (in setter_Array) notifyDataSetChanged();	(notify the adapter the dataset has been changed.) (this way we can refress the recyclerView with the new data that has been pass to this adapter class. )
+
+	3: *implement method*
+		#1: onCreateViewHolder(name convention: Creating the costom_layout elements by Layout_inflater)
+			*we know every object is a View. so:
+
+			@ onCreatViewHolder (ViewGroup, viewTyps)
+			View view = LayoutInflater.from( ViewGroup.getContext ).inflate( custom_layout_address , parent[view_grup], false)
+			return new ViewHolder(view);
+
+		#2: onBindViewHolder( set data to custom_layout element via ArrayList<Model>, and clickListener. )
+			holder.fildName.set(arrayName.get(position).getFild());
+
+	
+		#3: getItemCount()
+			[return the item size of ArrayList < Model > ]
+
+
+
