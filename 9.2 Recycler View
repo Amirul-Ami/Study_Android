@@ -54,4 +54,10 @@ Using Recycler_View:
 			[return the item size of ArrayList < Model > ]
 
 
+5# java
+	1: Adapter.set( data )
+	2: RecyclerView.set( Adapter )
+	3: RecyclerView.set( Layout Manager, LinearLayoutManager.HORIZONTAL )
+
+
 
