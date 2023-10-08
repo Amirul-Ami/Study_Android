@@ -1,0 +1,35 @@
+1# Res > new > Android Resource Directory > 
+	Resource type: font (this creat font repo.)
+
+2# copy font from desktop, and paste to font repo.
+
+3# Activity XML
+
+	<TextView
+		android : fontFamily="@font/fontname(all lower case.)" 
+
+4# Google Fonts
+
+
+
+5# Font_Family
+
+	#1: FontFamily in xml
+		1: Font Resource File
+		*font repo > new > Font Resource File
+		*File name: Font name
+	
+		2:   (1)font   (2)style   (3)fontWeight  [font weight android developer]
+
+		*<font
+			android: font="@font/fontName"
+			android: fontStyle="normal"
+			android: fontWeight="400"/>
+
+
+	#2 Font_Family in Java:
+
+		1: Typeface typeface = getResources().getFont( R.font.fontName ); / ResourcesCompat.getFont( this, R.font.fontName );
+
+		2: onClickListener()
+			TextViewID.setTypeface( typeface )
