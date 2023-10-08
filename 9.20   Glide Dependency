@@ -29,7 +29,7 @@ dependencies {
 
 // For a simple view:
 @Override public void onCreate(Bundle savedInstanceState) {
-  ...
+  
   ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
 
   Glide.with(this).load("https://goo.gl/gEgYUd").into(imageView);
