@@ -1,0 +1,12 @@
+1# create Activity
+	1: in you package > new > Activity > Empty Activity
+	*(name have "Activity"/ no Space/ no Strange Character)
+
+
+2# navigate other Activity
+
+	1: Intent( context, destination_Activity )
+
+	Intent intent = new Intent( MainActivity.this, newActivity.class );
+
+	2: startActivity (intent);
