@@ -13,7 +13,7 @@
 
 4: RadioGroup
 •	orientation
-•	onCheckedChangedListener 
+•	onCheckedChangeListener 
 •	.getCheckedRadioButtonId() return Id
 
 5: ProgressBar
