@@ -1,0 +1,52 @@
+Expandable Relative layout.
+*create another relative layout down below the relative layout we already have. And change the visibility to gone.[1]
+*Later on our Adapter class, when user click the down arro button we are going to change the Relative layout visibility to visible. Plus add some animation.[3,4]
+
+
+
+1# XML
+	<CardView (id)
+		<Relative_layout
+			Relative_layout   (id- collaps version)
+			Relative_layout   (id- Expand version)
+		</Relative_layout>
+	</CardView>
+
+2# Model ( Data )
+	* Define a boolean fild name isExpanded
+	Fild: private boolean isExpanded;
+	Constracor: (give valu to false)  this.isExpanded = false;
+
+	* create getter & setter for isExpanded.
+
+
+3# Adapter
+	1: In ViewHolder class, create clickListener in Arrow for changing isExpanded value + notify Adapter.
+
+		*Click listener for down_arro & up_arro. inside change the oposite vale of isExpanded + notify Adapter.
+		*get object by [ get_Adapter_Position() ]
+		*set object fild isExpanded to Negative_Value
+		*notifyItemChanged( get_Adapter_position() )  [tell the Adapter that we have changed some item in our data_set]
+
+		onClickListener()
+			Object o = ArrayList.get( getAdapterPosition() );
+			o.setExpanded( !o.isExpanded() );
+			notifyItemChanged( getAdapterPosition() );
+
+
+	2: In onBindViewHolder change the Relative layout visibility to (View.VISIBLE)/(View.GONE) 
+
+		@onBindViewHolder
+		if( element.get(position).isExpanded()){
+			holder.expandedRelativeLayout.setVisibility (View.VISIBLE);
+			holder.downArrow.setVisibility (View.GONE)
+		}else{
+			holder.expandedRelativeLayout.setVisibility (View.GONE);
+			holder.downArrow.setVisibility (View.VISIBLE);
+		}
+
+
+4# Animation
+	*for smoth transition use animation from (androidx.transition)
+	1: TransitionManager.beginDeleyTransition (holder.parent) [parent is cardView id]
+
