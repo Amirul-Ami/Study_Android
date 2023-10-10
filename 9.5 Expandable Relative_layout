@@ -15,7 +15,7 @@ Expandable Relative layout.
 2# Model ( Data )
 	* Define a boolean fild name isExpanded
 	Fild: private boolean isExpanded;
-	Constracor: (give valu to false)  this.isExpanded = false;
+	Constracor: (give value to false)  this.isExpanded = false;
 
 	* create getter & setter for isExpanded.
 
