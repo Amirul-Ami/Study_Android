@@ -7,4 +7,4 @@ Cardview dependency:        implementation "androidx.cardview:cardview:1.0.0"
 Glide  dependencies:        implementation 'com.github.bumptech.glide:glide:4.16.0'
 
 
-Recycler_View:        implementation 'androidx.recyclerview: recyclerview: ver.si.on'  ----> androidx
+Recycler_View:        implementation 'androidx.recyclerview: recyclerview: ver.si.on'  ---->( androidx )
