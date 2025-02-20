@@ -28,7 +28,7 @@ Using Recycler_View:
 
 4# Adapter:
 
-	1: (innerclass) ViewHolder extends RecyclerView.ViewHolder{}
+	1: (innerclass) ViewHolder extends RecyclerView.ViewHolder()
 		* (create) Constructor
 		* (initialize Custome_layout element inside this class)
 
